@@ -1,15 +1,17 @@
 ---
 layout: page
-title: About
-permalink: /about/
+
+permalink: /CV/
 ---
 
-Some information about you!
+Yulia Shitova is a professor at Russian State University for the Humanities (Moscow) and also at State University of Dubna (Moscow region). Yulia's been working in the education and science field for more than 20 years. Her scientific interests include  
 
-### More Information
+### Courses taught
 
-A place to include any other types of information that you'd like to include about yourself.
+The courses currently and previously lead include:
+- Digital marketing
+- Economics
 
 ### Contact me
 
-[email@domain.com](mailto:email@domain.com)
+You can contact Yulia at [yu_shitova@mail.ru](mailto:yu_shitova@mail.ru).
