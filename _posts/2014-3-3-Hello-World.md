@@ -268,7 +268,7 @@ function showhide(obj){
 }
 // ]]>
 </script>
-<center><b>Система маркетинговых коммуникаций</b></center><br/><br/>
+<center><b>Эффективность рекламной кампании</b></center><br/><br/>
 &nbsp;&nbsp;&nbsp;<span style="color:#006699;text-decoration:underline;cursor:pointer;" onclick="document.getElementById('instruction').style.display = showhide(document.getElementById('instruction').style.display)">
 Инструкция</span>
  <br/>
