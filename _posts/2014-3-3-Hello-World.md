@@ -3,14 +3,82 @@ layout: post
 title: Тест "Система маркетинговых коммуникаций"
 ---
 
-<!-- Master-Test Quiz BEGIN -->
-<ins style="height: 616px; width: 600px; border: medium none ; margin: 0pt; padding: 0pt; display: inline-table; position: relative; visibility: visible; text-decoration: none; color:#222222;font-family:tahoma,arial,helvetica,sans-serif;font-size:11px;font-size-adjust:none;font-stretch:normal;font-style:normal;font-variant:normal;font-weight:normal;">
-<script type="text/javascript"><!--
-try {
-    window.MasterTest = window.MasterTest || {}; MasterTest.quizId = '165899'; MasterTest.height = 616; MasterTest.width = '600';
-} catch (e){document.write('Error: Can not initialise test widget')}
-//-->
+<script type="text/javascript" language="JavaScript">// <![CDATA[
+ var res="3"; 
+function check_me()
+{
+    var count=0;
+    with(document.test) {
+if (!Q1[0].checked&&!Q1[1].checked&&!Q1[2].checked&&!Q1[3].checked)  
+{count+=1};  
+if (count>0) alert("Вы выполнили не все задания. Проверьте себя!")    
+        else answer();
+    }
+} 
+ 
+function control(k, f1) {
+if (k==1&&f1.checked) return true;
+return false;
+}
+
+function answer() {
+answ="";
+     with(document)    {
+    answ+=control(res.charAt(0) ,test.Q1[0],test.Q1[1],test.Q1[2],test.Q1[3])?"1":"0";
+
+showResult();
+    }
+}
+ 
+function showResult()   {
+    var nok=0;
+    var i,s;
+ 
+for (i=0; i<answ.length;i++) {nok+=answ.charAt(i)=="1"?1:0;}
+if(nok==1) s="ОТЛИЧНО";
+if(nok<1) s="ХОРОШО";
+if(nok<0.75) s="УДОВЛЕТВОРИТЕЛЬНО";
+if (nok<0.5) s="НЕУДОВЛЕТВОРИТЕЛЬНО";
+    document.test.s1.
+    value="Количество правильных ответов "+nok+". Ваша оценка "+s+". Посмотрите на окно рядом с номером вопроса. Если ответ правильный, там (+). Если ответ ошибочен, там (-).";
+ 
+with(document.test)
+    {
+    if (answ.charAt(0)=="1") {T1.value=" + "} else {T1.value=" - "};
+     }
+}
+function showhide(obj){
+    if(obj == 'none') return 'inline';
+    else return 'none';
+}
+// ]]>
 </script>
-<script type="text/javascript" src="http://master-test.net/ru/js/widget.js"></script>
-<div style="height: 14px; text-align: right; width: 598px; background-color: #ddeef9; border: 1px solid #99BBE8; left: 0pt; position: relative; top:-1px;">&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://master-test.net">Сделано в Мастер-тест</a>&nbsp;&nbsp;&nbsp;&nbsp;</div></ins>
-<!-- Master-Test Quiz END -->
+<center><b>Система маркетинговых коммуникаций</b></center><br/><br/>
+&nbsp;&nbsp;&nbsp;<span style="color:#006699;text-decoration:underline;cursor:pointer;" onclick="document.getElementById('instruction').style.display = showhide(document.getElementById('instruction').style.display)">
+Инструкция</span>
+ <br/>
+<div id="instruction" style="display: none; width: 100%;">
+<ul>
+<li>Выберите один из вариантов в каждом из 1 вопросов;</li>
+<li>Нажмите на кнопку "Показать результат";</li>
+<li>Скрипт не покажет результат, пока Вы не ответите на все вопросы;</li>
+<li>Загляните в окно рядом с номером задания. Если ответ правильный, то там (+). Если Вы ошиблись, там (-).</li>
+<li>За каждый правильный ответ начисляется 1 балл;</li>
+<li>Оценки: менее 0.5 баллов - НЕУДОВЛЕТВОРИТЕЛЬНО, от 0.5 но менее 0.75 - УДОВЛЕТВОРИТЕЛЬНО, 0.75 и менее 1 - ХОРОШО, 1 - ОТЛИЧНО;</li>
+<li>Чтобы сбросить результат тестирования, нажать кнопку "Сбросить ответы";</li>
+</ul>
+</div>
+<form name="test"><ol>
+<li><INPUT type="text" size="1" value="" name="T1"/><b> 1. Бизнес-стратегия, предполагающая тщательное сегментирование целевого рынка фирмы, это</b><br/>
+<input type="radio" value="0" name="Q1"/> современная стратегия бизнеса;<br />
+<input type="radio" value="1" name="Q1"/> рыночно-ориентированная стратегия;<br />
+<input type="radio" value="2" name="Q1"/> клиенто-ориентированная стратегия;<br />
+<input type="radio" value="3" name="Q1"/> производственно-ориентированная стратегия.<br />
+<br/></li></ol>      
+<CENTER>
+<P><TEXTAREA name="s1" rows="4" cols="70" readonly> </TEXTAREA> </P>
+<INPUT onclick="check_me()" type="button" value="Показать результат"/>&nbsp;&nbsp;&nbsp;&nbsp; 
+<INPUT type="reset" value="Сбросить ответы"/> 
+</CENTER>        
+</form> 
+<!-- Test created by service http://test.fromgomel.com -->
