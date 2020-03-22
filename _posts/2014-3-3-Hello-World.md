@@ -195,8 +195,7 @@ function showhide(obj){
 
 
 ---
-layout: post
-title: Тест "Эффективность рекламной кампании"
+title: Тест "Система маркетинговых коммуникаций"
 ---
 
 <script type="text/javascript" language="JavaScript">// <![CDATA[
