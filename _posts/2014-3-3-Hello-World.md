@@ -195,7 +195,7 @@ function showhide(obj){
 
 
 ---
-title: Тест "Система маркетинговых коммуникаций"
+title: Тест "Эффективность рекламной кампании"
 ---
 
 <script type="text/javascript" language="JavaScript">// <![CDATA[
